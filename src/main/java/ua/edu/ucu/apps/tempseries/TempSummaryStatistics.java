@@ -6,7 +6,8 @@ public class TempSummaryStatistics {
     private final double minTemp;
     private final double maxTemp;
     
-    public TempSummaryStatistics(double avgTemp, double devTemp, double minTemp, double maxTemp) {
+    public TempSummaryStatistics(double avgTemp, double devTemp,
+    double minTemp, double maxTemp) {
         this.avgTemp = avgTemp;
         this.devTemp = devTemp;
         this.minTemp = minTemp;
@@ -31,7 +32,8 @@ public class TempSummaryStatistics {
     
     @Override
     public String toString() {
-        return String.format("TempSummaryStatistics{avgTemp=%.2f, devTemp=%.2f, minTemp=%.2f, maxTemp=%.2f}",
+        return String
+.format("TempSummaryStatistics{avgTemp=%.2f, devTemp=%.2f, minTemp=%.2f, maxTemp=%.2f}",
                 avgTemp, devTemp, minTemp, maxTemp);
     }
 }

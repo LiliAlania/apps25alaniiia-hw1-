@@ -16,7 +16,7 @@ public class TemperatureSeriesAnalysis {
     public TemperatureSeriesAnalysis(double[] temperatureSeries) {
         for (double temp : temperatureSeries) {
             if (temp < ABSOLUTE_ZERO) {
-                throw new InputMismatchException("Temperature cannot be less than -273°C");
+                throw new InputMismatchException("Invalid temp");
             }
         }
         this.temperatureSeries = Arrays.copyOf(temperatureSeries, temperatureSeries.length);
@@ -39,7 +39,7 @@ public class TemperatureSeriesAnalysis {
         throw new IllegalArgumentException("Temperature series is empty");
         }
         double deviation = 0;
-        for (double temp : temperatureSeries){
+        for (double temp : temperatureSeries) {
             double diff = temp - average();
             deviation += diff * diff;
         }
@@ -173,7 +173,7 @@ public class TemperatureSeriesAnalysis {
     public int addTemps(double... temps) {
         for (double temp : temps) {
             if (temp < ABSOLUTE_ZERO) {
-                throw new InputMismatchException("Temperature cannot be less than -273°C");
+                throw new InputMismatchException("Invalid temp");
             }
         }
         int requiredCapacity = size + temps.length;
