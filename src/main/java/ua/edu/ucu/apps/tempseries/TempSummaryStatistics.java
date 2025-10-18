@@ -30,10 +30,10 @@ public class TempSummaryStatistics {
         return maxTemp;
     }
     
-    @Override
-    public String toString() {
-        return String
-.format("TempSummaryStatistics}",
-        avgTemp, devTemp, minTemp, maxTemp);
-    }
+//     @Override
+//     public String toString() {
+//         return String
+// .format("TempSummaryStatistics}",
+//         avgTemp, devTemp, minTemp, maxTemp);
+//     }
 }
