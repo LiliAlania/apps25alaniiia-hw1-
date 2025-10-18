@@ -2,7 +2,9 @@ name: Measure code coverage
 
 on:
   pull_request:
-
+permissions:
+  contents: read
+  pull-requests: write
 jobs:
   build:
     runs-on: ubuntu-latest
