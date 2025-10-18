@@ -16,7 +16,7 @@ public class TemperatureSeriesAnalysis {
     public TemperatureSeriesAnalysis(double[] temperatureSeries) {
         for (double temp : temperatureSeries) {
             if (temp < ABSOLUTE_ZERO) {
-                throw new InputMismatchException("Invalid temp");
+                throw new IllegalArgumentException("Invalid temp");
             }
         }
         int a = temperatureSeries.length;
