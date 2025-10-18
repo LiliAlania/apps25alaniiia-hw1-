@@ -19,7 +19,8 @@ public class TemperatureSeriesAnalysis {
                 throw new InputMismatchException("Invalid temp");
             }
         }
-        this.temperatureSeries = Arrays.copyOf(temperatureSeries, temperatureSeries.length);
+        int a = temperatureSeries.length;
+        this.temperatureSeries = Arrays.copyOf(temperatureSeries, a);
         this.size = temperatureSeries.length;
     }
 
